@@ -23,7 +23,7 @@ systemctl enable mg.service
 echo "Install mg complete!"
 
 
-wget -qO- https://github.com/Arriven/db1000n/releases/latest/download/db1000n_0.8.12_linux_amd64.tar.gz | tar xvzf - -C /usr/local/bin/ db1000n
+wget -qO- https://github.com/Arriven/db1000n/releases/download/v0.8.13/db1000n_0.8.13_linux_amd64.tar.gz | tar xvzf - -C /usr/local/bin/ db1000n
 chmod +x /usr/local/bin/db1000n
 
 cat << EOF > /etc/systemd/system/db.service
